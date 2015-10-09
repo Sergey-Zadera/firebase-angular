@@ -2,17 +2,14 @@
 
 angular.module('myApp', [
 	'ngRoute',
-	'myApp.home', // модуль авторизации
-	'myApp.register', // модуль регистрации
-	'myApp.welcome',  // модуль страницы после авторезации
-	'myApp.addPost' // модуль блог
+	'myApp.home', // authorization module
+	'myApp.register', // registration module
+	'myApp.welcome', // module page after avtorezatsii
+	'myApp.addPost' // module blog
 ]).
 	config(['$routeProvider', function($routeProvider) {
-		// назначаем представление по умолчанию
+		// Assign the default view
         $routeProvider.otherwise({
             redirectTo: '/home'
         });
 	}])
-
-
-

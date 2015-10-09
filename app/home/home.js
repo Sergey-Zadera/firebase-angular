@@ -1,6 +1,6 @@
 'use strict';
 angular.module('myApp.home', ['ngRoute', 'firebase'])
-    // Определение маршрута
+    // Define route
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/home', {
             templateUrl: 'home/home.html',
@@ -8,7 +8,6 @@ angular.module('myApp.home', ['ngRoute', 'firebase'])
         });
     }])
 
-    // контроллер home
     .controller('HomeCtrl', ['$scope','$location','CommonProp','$firebaseAuth',function($scope,$location,CommonProp,$firebaseAuth) {
     	var firebaseObj = new Firebase("https://glowing-fire-8820.firebaseio.com");
     	var loginObj = $firebaseAuth(firebaseObj);
@@ -32,7 +31,6 @@ angular.module('myApp.home', ['ngRoute', 'firebase'])
             	//Failure callback
             	console.log('Authentication failure');
         	});
-			// логика авторизации
 		}
     }])
 
