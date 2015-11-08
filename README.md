@@ -7,10 +7,10 @@ Password: 123456789
 
 ## Contact
 
-angularJS: http://angularjs.org/
-git: http://git-scm.com/
-bower: http://bower.io
-npm: https://www.npmjs.org/
-node: http://nodejs.org
-jasmine: http://jasmine.github.io
-http-server: https://github.com/nodeapps/http-server
++ angularJS: http://angularjs.org/
++ git: http://git-scm.com/
++ bower: http://bower.io
++ npm: https://www.npmjs.org/
++ node: http://nodejs.org
++ jasmine: http://jasmine.github.io
++ http-server: https://github.com/nodeapps/http-server
